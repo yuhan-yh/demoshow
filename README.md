@@ -1,12 +1,12 @@
 <!--
  * @Author: your name
  * @Date: 2022-09-29 15:52:17
- * @LastEditTime: 2022-09-29 16:04:50
+ * @LastEditTime: 2022-09-29 16:08:10
  * @LastEditors: yuhan
  * @Description: 
  * @FilePath: \demoshow\README.md
 -->
-# demoshow
+## demoshow
 
 案例集
 
@@ -28,8 +28,3 @@ npm run dev
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```

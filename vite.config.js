@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2022-09-29 15:52:17
- * @LastEditTime: 2022-09-29 16:01:51
+ * @LastEditTime: 2022-10-01 19:11:55
  * @LastEditors: yuhan
  * @Description:
  * @FilePath: \demoshow\vite.config.js
@@ -17,6 +17,18 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
+  //全局引入
+  css: {
+    preprocessorOptions: {
+      scss: {
+        /**如果引入多个文件，可以使用
+         * '@import "@/assets/scss/globalVariable1.scss";
+         * @import"@/assets/scss/globalVariable2.scss";'
+         **/
+        additionalData: '@import "@/assets/index.scss";',
+      },
     },
   },
   server: {

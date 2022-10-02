@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2022-10-01 15:27:53
- * @LastEditTime: 2022-10-02 23:37:29
+ * @LastEditTime: 2022-10-02 23:45:56
  * @LastEditors: yuhan
  * @Description: 
  * @FilePath: \demoshow\src\App.vue
@@ -45,6 +45,7 @@
                   <div class="descBox">
                     <p class="title">{{ demo.name }}</p>
                     <div class="desc">{{ demo.desc }}</div>
+                    <div class="label">点击查看案例</div>
                   </div>
                 </div>
               </div>
@@ -371,41 +372,52 @@ const hoverImg = (demoTypeKey, demo, showHoverImg) => {
                       -webkit-line-clamp: 7;
                     }
                   }
-                  .hoverBox {
-                    position: absolute;
-                    bottom: 0;
-                    width: 100%;
-                    height: 220px;
-                    padding-top: 80px;
-                    background-image: linear-gradient(
-                      rgba(255, 255, 255, 0) 10%,
-                      rgb(255, 255, 255) 15%,
-                      rgb(255, 255, 255) 100%
-                    );
-                    display: flex;
-                    flex-flow: wrap;
-                    justify-content: center;
-                    align-items: center;
-                    .el-image {
-                      width: 150px;
-                      height: 150px;
-                    }
-                    .label {
-                      width: 100%;
-                      text-align: center;
-                      font-size: 12px;
-                      line-height: 40px;
-                      color: #676b73;
-                    }
-                  }
                 }
               }
               .web {
                 .demoCard {
                   cursor: pointer;
+                  .label {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 40px;
+                    color: #676b73;
+                  }
                 }
               }
               .xiaochenxu {
+                .hoverBox {
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+                  height: 270px;
+                  padding-top: 30px;
+                  background-image: linear-gradient(
+                    rgba(255, 255, 255, 0) 10%,
+                    rgb(255, 255, 255) 15%,
+                    rgb(255, 255, 255) 100%
+                  );
+                  display: flex;
+                  flex-flow: wrap;
+                  justify-content: center;
+                  align-items: center;
+                  .el-image {
+                    width: 150px;
+                    height: 150px;
+                  }
+                  .label {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 12px;
+                    line-height: 40px;
+                    color: #676b73;
+                  }
+                }
               }
             }
           }
